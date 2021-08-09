@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fire TV Settings</string>
+    <string name="two_opts_display">Display and Sound</string>
+    <string name="two_opts_net">Network</string>
+    <string name="two_opts_dev">Bluetooth and Remotes</string>
+    <string name="two_opts_access">Accessibility</string>
+    <string name="two_opts_app">Applications</string>
+    <string name="two_opts_pref">Preferences</string>
+    <string name="two_opts_device">My FireTV</string>
+    <string name="two_opts_account">Amazon Account</string>
+    <string name="two_opts_res1">Notifications</string>
+    <string name="two_opts_res2">Equipment</string>
+    <string name="two_opts_res3">Sleep</string>
+    <string name="two_opts_nix"> </string>
+    <string name="two_opts_res5">Reboot TWRP</string>
+    <string name="two_opts_res6">Enable ADB</string>
+    <string name="two_opts_res7">Enable non Market Apps</string>
+</resources>
