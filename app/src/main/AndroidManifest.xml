@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.markus.firetools"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+        
+    <!-- for DisplayAndSoundsActivity / AccessibilityActivity / MyAccountActivity / DeviceActivity -->
+    <uses-permission android:name="com.amazon.tv.permission.LAUNCHER_SETTINGS" />
+    <!-- for setting.AlexaSettingActivity -->
+    <uses-permission android:name="com.amazon.vizzini.setting.permission.ALEXA_SETTING" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity
+            android:name=".MainActivity"
+            android:banner="@drawable/ic_logo"
+            android:icon="@drawable/ic_logo"
+            android:label="@string/app_name"
+            android:logo="@drawable/ic_logo"
+            android:screenOrientation="landscape"
+            android:launchMode="singleInstance"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+            <intent-filter android:priority="101">
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.settings.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:priority="3">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LEANBACK_SETTINGS"/>
+            </intent-filter>
+            <intent-filter android:priority="901">
+                <category android:name="com.amazon.device.intent.category.LAUNCHER_MENU"/>
+            </intent-filter>
+    </activity>
+
+   </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Fire TV Einstellungen</string>
+    <string name="two_opts_display">Bildschirm und Audio</string>
+    <string name="two_opts_net">Netzwerk"</string>
+    <string name="two_opts_dev">Bluetooth und Fernbedienung</string>
+    <string name="two_opts_access">Barrierefreiheit</string>
+    <string name="two_opts_app">Anwendungen</string>
+    <string name="two_opts_pref">Einstellungen</string>
+    <string name="two_opts_device">Mein FireTV</string>
+    <string name="two_opts_account">Mein Konto</string>
+    <string name="two_opts_res1">Benachrichtigungen</string>
+    <string name="two_opts_res2">Gerätesteuerung</string>
+    <string name="two_opts_res3">Ausschalten</string>
+    <string name="two_opts_nix"> </string>
+    <string name="two_opts_res6">ADB-Debugging einschalten</string>
+    <string name="two_opts_res7">APP unbekannte Herkunft einschalten</string>
+    <string name="two_opts_res5">Neustart</string>
+</resources>

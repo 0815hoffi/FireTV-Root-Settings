@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.markus.firetools"
+        minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 28
+        versionCode 17
+        versionName "2.0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GrcadleDependency,GradleCompatible
+    api 'com.android.support:recyclerview-v7:23.2.0'
+    //noinspection GradleDependency,GradleCompatible
+    api 'com.android.support:leanback-v17:23.2.0'
+    //noinspection GradleDependency,GradleCompatible
+    //api 'com.android.support:appcompat-v7:23.2.0'
+    api 'com.github.bumptech.glide:glide:3.8.0'
+}
